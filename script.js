@@ -188,7 +188,7 @@ var name_data=[
 
   {
    tag: "Taisnunan",
-   mean:"以變形而來，由一種寄生在qainunan（榛樹）的蟲糞所生，故稱為Taki qainunan，這裡的Taki是指糞。"
+   mean:"以變形而來，由一種寄生在qainunan（赤楊木）的蟲糞所生，故稱為Taki qainunan，這裡的Taki是指糞。"
   },
 
   {
@@ -336,6 +336,7 @@ $("p").mouseenter(function(e){
 $(document).ready(function(){
   $(".bg-name").mouseenter(function(){
     $("#title-span").text("左邊是該氏族的分布圖!");
+    $("#title-span").css("color","black");
   });
 });
 
@@ -714,224 +715,118 @@ $(document).ready(function(){
 
 // s5
 $(document).ready(function(){
-  $(".s5-button").click(function(){
+  $(".s4-button").click(function(){
     $(".s6-button").addClass("s2-up");
   });
 });
 
+//
 
-// s6
 $(document).ready(function(){
-  $("#toao-3").mouseenter(function(){
-    $(".section6").css({"background-image" : "url('image/23.jpg')"});
-    $(".section6 h2").text("丹大");
-    $(".section6 p").text("此河流為丹大溪，兩旁為丹大社的範圍，右邊叫做Tilusan社，左邊是Qalmut社，對面是關門山，也是中央山脈的主脊。");
+  $("#point circle").css("fill","DarkOrange");
+});
+
+$(document).ready(function(){
+  $("#point circle").hover(function(){
+    $(this).css("fill","HoneyDew");
+  },function(){
+    $(this).css("fill","DarkOrange")});
+});
+
+$(document).ready(function(){
+  $("#point circle").click(function(){
+    $(".left-box").css("left","0%");
   });
 });
 
 $(document).ready(function(){
-  $("#toao-3").mouseleave(function(){
-    $(".section6").css({"background-image" : "none"});
-    $(".section6 p").text("");
-    $(".section6 h2").text("");
-  });
-});
-
-
-$(document).ready(function(){
-  $("#toao").mouseenter(function(){
-    $(".section6").css({"background-image" : "url('image/13.jpg')"});
-    $(".section6 h2").text("Taisnunan家屋");
-    $(".section6 p").text("此地為筆者的家屋，位於丹大社旁邊的Qalmut社，是河谷旁的台階地形，附近皆種植Kanunan(榛樹)。");
+  $(".arrow-left").click(function(){
+    $(".left-box").css("left","-40%");
   });
 });
 
 $(document).ready(function(){
-  $("#toao").mouseleave(function(){
-    $(".section6").css({"background-image" : "none"});
-    $(".section6 p").text("");
-    $(".section6 h2").text("");
+  $("#p1").click(function(){
+    $(".top-photo").css("background-image","url('image/01.jpg')");
+    $(".bottom-text h2").text("AsangVatan-丹大");
+    $(".bottom-text p").text("此河谷為丹大溪流域，兩旁為丹大的範圍，右邊叫做Tilusan社，左邊是Qalmut社，正對面是中央山脈主脊-關門山；丹大大部分為布農族丹社群早期的生活領域，是屬於布農族最東邊的區域；據史料顯示，約於1897年，就有16個社生活於此地，後於1910年，又統計出有23個社於此地；可以發現這時期丹社群族人有向東遷擴散的傾向，然而並非只有此時期東遷，早在十七世紀就有族人遷到現今花蓮縣的太平部落上，依長輩說可能是因為農耕上的輪耕制度，因而另闢農地，也有的說是為了尋覓獵場；後來被日本人遷到花蓮後，慢慢地家鄉變成資源濫採的林班地。");
   });
 });
-
 $(document).ready(function(){
-  $("#toao-2").mouseenter(function(){
-    $(".section6").css({"background-image" : "url('image/14.jpg')"});
-    $(".section6 h2").text("Qatpipitu");
-    $(".section6 p").text("布農語 pitu 是指七意思是，Qadpipitu 過後到達花蓮縣和南投縣的稜線處。古道路線上坡處會經過不同蜿蜒曲折的七個斜彎，位置接近南投縣稜線處，只有這條路徑，沒有別的出口。");
+  $("#p2").click(function(){
+    $(".top-photo").css("background-image","url('image/02.jpg')");
+    $(".bottom-text h2").text("Taisnunan家屋");
+    $(".bottom-text p").text("此地為筆者的家屋，位於丹大社旁邊的Qalmut社上，是河谷旁的台階地形，較特別的是，附近皆種植Kanunan(赤楊木)，是跟氏族名有關的樹木。還記得快要到家屋時，跟族人一起唱起Macilumah（回家歌），用來告知生活在家屋的長輩，Taisnunan的孩子回來看長輩們了。剛看到家屋時，被其規模驚訝到，不僅用石頭堆的牆壁厚3-4公尺，整個家屋的長更達20-30公尺，不僅如此，旁邊還有許多石板屋，據長輩透漏，有的是分家的，有的是用來養動物的，有的是放頭骨的。");
   });
 });
-
 $(document).ready(function(){
-  $("#toao-2").mouseleave(function(){
-    $(".section6").css({"background-image" : "none"});
-    $(".section6 p").text("");
-    $(".section6 h2").text("");
+  $("#p3").click(function(){
+    $(".top-photo").css("background-image","url('image/03.jpg')");
+    $(".bottom-text h2").text("Qatpipitu");
+    $(".bottom-text p").text("布農語 pitu 是指七的意思，Qadpipitu 是指在從Tongqolan馬太鞍溪上游上關門山時，會經過七個彎，才會到達關門山頂。關門山是花蓮縣和南投縣的交界，長輩也說只有這條路徑好走，越過後，就是一整個直線直達丹大。此地也有於清朝設立的華表，是早期用來辨路的指標。");
   });
 });
-
-
 $(document).ready(function(){
-  $("#p1").mouseenter(function(){
-    $(".section6").css({"background-image" : "url('image/18.jpg')"});
-    $(".section6 h2").text("Tongqolan");
-    $(".section6 p").text("Tongqolan是指中午時太陽會照射的地方，描述族人們在狩獵的過程中，會在中午時抵達此地，並搭好獵寮後，就前往附近的huhulluli等待喝水的獵物。");
+  $("#p4").click(function(){
+    $(".top-photo").css("background-image","url('image/04.jpg')");
+    $(".bottom-text h2").text("Tongqolan");
+    $(".bottom-text p").text("Tongqo是指中午的意思，描述丹社族人們來到此地時，大多為中午的時段，因此以之命名；後來被遷移後，族人會從馬遠翻山越嶺來到此地狩獵，也相傳確實會在中午時抵達此地，而後在溪流旁邊的腹地搭好獵寮後，就會前往附近的huhulluli等待喝水的獵物。筆者的阿公表示，Tongqolan附近上方一帶為筆者家族的獵場地，小時候有跟筆者阿祖上去過，後來阿祖走後，因為當時還小，無法記住清楚的完整路段，就遺忘了，此外，筆者阿公也提到，布農族的狩獵領域意識很強烈，不能隨意亂進入，會引起紛爭，是一種挑釁的行為，家族的獵場就曾被某家的侵犯過的例子，導致現在仍有隔閡未解開。");
   });
 });
-
 $(document).ready(function(){
-  $("#p1").mouseleave(function(){
-    $(".section6").css({"background-image" : "none"});
-    $(".section6 p").text("");
-    $(".section6 h2").text("");
+  $("#p5").click(function(){
+    $(".top-photo").css("background-image","url('image/05.jpg')");
+    $(".bottom-text h2").text("Vieqes");
+    $(".bottom-text p").text("Vieqes是指休息之處，此地為陵線上，並且為一個大轉彎，該轉彎也形成一區寬敞的小平台，後來有人在這地打水泥，但目的不清楚，不過這裡可以接收得到訊號；另外，從這裡可以遠眺關門山，也就是中央山脈的主脊，從那裡翻過去就是南投丹大社。");
   });
 });
-
 $(document).ready(function(){
-  $("#p5").mouseenter(function(){
-    $(".section6").css({"background-image" : "url('image/31.jpg')"});
-    $(".section6 h2").text("Vieqes");
-    $(".section6 p").text("Vieqes是指休息之處，周圍幾乎都是芒草，望眼過去也沒有一棵樹木，該轉彎也形成一區寬敞的小平台，從這裡可以遠眺關門山，也就是中央山脈的主脊，從那裡翻過去就是南投丹大社。");
+  $("#p6").click(function(){
+    $(".top-photo").css("background-image","url('image/06.jpg')");
+    $(".bottom-text h2").text("Tongkupatasan");
+    $(".bottom-text p").text("山頂附近有一處是日本殖民時設置的三角點，因此族人稱之為Tongkupatasan，Tongku 是指「至高處」，「padasan」是指寫字動作的形容詞；三角點早期日本人是用來繪製地圖及辨識方向之用，後來此地又變成族人辨別路線的一個地標。");
   });
 });
-
 $(document).ready(function(){
-  $("#p5").mouseleave(function(){
-    $(".section6").css({"background-image" : "none"});
-    $(".section6 p").text("");
-    $(".section6 h2").text("");
+  $("#p7").click(function(){
+    $(".top-photo").css("background-image","url('image/07.jpg')");
+    $(".bottom-text h2").text("Taluqan");
+    $(".bottom-text p").text("Taluqan為工寮之意，到達此地從馬遠部落上來需要兩天時間；前幾年尋根的族人，利用鐵絲及木頭，沿著尋根及狩獵的路徑上，找到一個由三棵神木包圍且凹陷的平地，附近也有一條小溪，為方便取水，於是於此地建立工寮，此外，據長輩表示，在開闢新的獵徑或著尋路時，會以河流作為折返點，下次再來的時候，再從河流點往下開；後來也演變成獵人們彼此訓練的場域，約定某時間，於不同自己獵徑上來這裡，來評斷獵人的狩獵能力。");
+
+  });
+});$(document).ready(function(){
+  $("#p8").click(function(){
+    $(".top-photo").css("background-image","url('image/08.jpg')");
+    $(".bottom-text h2").text("光復林道");
+    $(".bottom-text p").text("此區域是從光復林道上去，為早期族人工作之地，稱為林班地，也是許多族人的共同記憶，像是眾所皆知的林班歌等，後來因為殖民政權的轉替，以及國家發展趨勢的不同，光復林道已慢慢被遺忘；光復林道雖然寬敞，但地震等天災關係，這次在尋根時，時常走不到幾十分鐘，就發現林道消失，近在眼前的變成是坍方及河谷，於是必須扛著近30公斤的裝備，不斷上切及下切找尋林道的蹤跡；圖片中的石頭上的28，代表著此地為林道28K，是用來測量路段的長度，但現今因天災人為等，已不再那麼精準。");
+  });
+});$(document).ready(function(){
+  $("#p9").click(function(){
+    $(".top-photo").css("background-image","url('image/09.jpg')");
+    $(".bottom-text h2").text("Huhulmadaingnqazan");
+    $(".bottom-text p").text("此地位於Qatmi(下方)，「Huhul」為洞穴的意思，而「madaingn」為長輩的意思，該地是由一個巨大的石頭與地面斜切而形成的石洞，其前面則是平緩的稜線；相傳族人從丹大遷徙時，有小孩子因生病，而葬生於此，因此族人到達此地也會進行祭告，並祈求回家的路程能夠平安。本次尋根筆者跟族人們也在下山前，在此地待上一晚，既溫暖又舒服，還有訊號。");
+  });
+});$(document).ready(function(){
+  $("#p10").click(function(){
+    $(".top-photo").css("background-image","url('image/10.jpg')");
+    $(".bottom-text h2").text("Masubunbun");
+    $(".bottom-text p").text("Masubunbun為尋根的出入口；「Bunbun」是指香蕉的意思，因此地盛產野生香蕉因而命名之；該地是一個大平地，上面長滿密密麻麻且比人高的香蕉樹，周圍也長滿高長的芒草，而此兩種植物，也長是族人用來當作屋頂的材料。本次尋根抵達這裡前，於一聲槍響後，與族人們一起唱著Macilumah(回家歌)走著，心情是多麼的激動，最後跟另一批接受的族人會面後，我們圍一圈禱告，感謝土地，感謝祖靈，感謝尋根的你與我。");
   });
 });
-
 $(document).ready(function(){
-  $("#p6").mouseenter(function(){
-    $(".section6").css({"background-image" : "url('image/12.jpg')"});
-    $(".section6 h2").text("Tongkupatasan");
-    $(".section6 p").text("山頂附近有一處是日本殖民時設置的三角點，因此稱之為Tongkupatasan，Tongku 是指「至高處」，「padasan」是指寫字的形容詞，這裡的植被又變成矮小的樹木及草叢，周圍的箭竹林也都不見蹤影。");
+  $(".s6-button").click(function(){
+    $("#tw-map").addClass("s2-up");
   });
 });
-
 $(document).ready(function(){
-  $("#p6").mouseleave(function(){
-    $(".section6").css({"background-image" : "none"});
-    $(".section6 p").text("");
-    $(".section6 h2").text("");
+  $("#tw-map").click(function(){
+    $("#animation-name").addClass("s2-up");
   });
 });
-
 $(document).ready(function(){
-  $("#toao-4").mouseenter(function(){
-    $(".section6").css({"background-image" : "url('image/32.jpg')"});
-    $(".section6 h2").text("Mahilav");
-    $(".section6 p").text("「hilav」意指門的意思，Ma-為將名字轉換為動詞，因此Mahilav為開門的意思。此地位於拔仔山地後方稜線上的至高處，兩邊為一望無際的懸崖，望向東去可以看見花東縱谷，往西望去可以看見關門古道及石階，而關門古道也正是丹社群遷徙時，所經由的道路，是老家、獵場、家人等曾經生活過的方向及領域，因此族人以開門比喻。");
+  $("#animation-name").click(function(){
+    $("#animation-name-1").addClass("s2-up");
   });
 });
 
-$(document).ready(function(){
-  $("#toao-4").mouseleave(function(){
-    $(".section6").css({"background-image" : "none"});
-    $(".section6 p").text("");
-    $(".section6 h2").text("");
-  });
-});
 
-$(document).ready(function(){
-  $("#p2").mouseenter(function(){
-    $(".section6").css({"background-image" : "url('image/6.jpg')"});
-    $(".section6 h2").text("Taluqan");
-    $(".section6 p").text("此地演變成獵人們彼此訓練、堅守約定的一種方式，於不同獵徑上來這裡，必須於約定時間抵達約定點，以評斷獵人的狩獵能力，另外，此工寮的位置是坐落在三棵巨大神木中間產生下窪的小平地，而會挑這裡除了是因為水源外，也方便族人好辨認位置。");
-  });
-});
-
-$(document).ready(function(){
-  $("#p2").mouseleave(function(){
-    $(".section6").css({"background-image" : "none"});
-    $(".section6 p").text("");
-    $(".section6 h2").text("");
-  });
-  
-});
-
-$(document).ready(function(){
-  $("#p3").mouseenter(function(){
-    $(".section6").css({"background-image" : "url('image/42.jpg')"});
-    $(".section6 h2").text("Huhulmadaingnqazan");
-    $(".section6 p").text("此地位於Qatmi下方，「Huhul」為洞穴的意思，而「madaingn」為長輩的意思，該地是由一個巨大的石頭與地面斜切而形成的石洞，其前面則是平緩的稜線，相傳族人從丹大遷徙時，有小孩子因生病，而葬生於此，因此族人到達此地也會進行祭告，並待上一晚，並祈求回家的路程能夠平安。");
-  });
-});
-
-$(document).ready(function(){
-  $("#p3").mouseleave(function(){
-    $(".section6").css({"background-image" : "none"});
-    $(".section6 p").text("");
-    $(".section6 h2").text("");
-  });
-});
-
-$(document).ready(function(){
-  $("#p9").mouseenter(function(){
-    $(".section6").css({"background-image" : "url('image/21.jpg')"});
-    $(".section6 h2").text("光復林道");
-    $(".section6 p").text("此區域為早期族人工作之地，稱為林班，是許多族人的共同記憶，後來也漸漸變成族人狩獵的場域。");
-  });
-});
-
-$(document).ready(function(){
-  $("#p9").mouseleave(function(){
-    $(".section6").css({"background-image" : "none"});
-    $(".section6 p").text("");
-    $(".section6 h2").text("");
-  });
-});
-
-$(document).ready(function(){
-  $("#p8").mouseenter(function(){
-    $(".section6").css({"background-image" : "url('image/43.jpg')"});
-    $(".section6 h2").text("Masubunbun");
-    $(".section6 p").text("「Bunbun」是指香蕉的意思，因此地盛產野生香蕉因而命名之，此地也是團隊的最後一站，該地是一個大平地，上面長滿密密麻麻且比人高的香蕉樹，周圍也長滿高長的芒草，而此兩種植物，也長是族人用來當作屋頂的材料。");
-  });
-});
-
-$(document).ready(function(){
-  $("#p8").mouseleave(function(){
-    $(".section6").css({"background-image" : "none"});
-    $(".section6 p").text("");
-    $(".section6 h2").text("");
-  });
-});
-
-// $(document).ready(function(){
-//   $(".section6 circle").mouseenter(function(){
-//     $(".section6 h2").text("");
-//   });
-
-$(document).ready(function(){
-  $("circle").mouseenter(function(){
-    $(".section6 h3").text("");
-  });
-});
-
-$(document).ready(function(){
-  $("#p4").mouseenter(function(){
-   
-    $(".section6 h2").text("馬遠");
-    $(".section6 p").text("故事開始的地方。");
-  });
-});
-
-$(document).ready(function(){
-  $("#p4").mouseleave(function(){
-    
-    $(".section6 h2").text("");
-    $(".section6 p").text("");
-  });
-});
-
-/*
- * anime.js v3.2.1
- * (c) 2020 Julian Garnier
- * Released under the MIT license
- * animejs.com
- */
-
-!function(n,e){"object"==typeof exports&&"undefined"!=typeof module?module.exports=e():"function"==typeof define&&define.amd?define(e):n.anime=e()}(this,function(){"use strict";var n={update:null,begin:null,loopBegin:null,changeBegin:null,change:null,changeComplete:null,loopComplete:null,complete:null,loop:1,direction:"normal",autoplay:!0,timelineOffset:0},e={duration:1e3,delay:0,endDelay:0,easing:"easeOutElastic(1, .5)",round:0},t=["translateX","translateY","translateZ","rotate","rotateX","rotateY","rotateZ","scale","scaleX","scaleY","scaleZ","skew","skewX","skewY","perspective","matrix","matrix3d"],r={CSS:{},springs:{}};function a(n,e,t){return Math.min(Math.max(n,e),t)}function o(n,e){return n.indexOf(e)>-1}function u(n,e){return n.apply(null,e)}var i={arr:function(n){return Array.isArray(n)},obj:function(n){return o(Object.prototype.toString.call(n),"Object")},pth:function(n){return i.obj(n)&&n.hasOwnProperty("totalLength")},svg:function(n){return n instanceof SVGElement},inp:function(n){return n instanceof HTMLInputElement},dom:function(n){return n.nodeType||i.svg(n)},str:function(n){return"string"==typeof n},fnc:function(n){return"function"==typeof n},und:function(n){return void 0===n},nil:function(n){return i.und(n)||null===n},hex:function(n){return/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(n)},rgb:function(n){return/^rgb/.test(n)},hsl:function(n){return/^hsl/.test(n)},col:function(n){return i.hex(n)||i.rgb(n)||i.hsl(n)},key:function(t){return!n.hasOwnProperty(t)&&!e.hasOwnProperty(t)&&"targets"!==t&&"keyframes"!==t}};function c(n){var e=/\(([^)]+)\)/.exec(n);return e?e[1].split(",").map(function(n){return parseFloat(n)}):[]}function s(n,e){var t=c(n),o=a(i.und(t[0])?1:t[0],.1,100),u=a(i.und(t[1])?100:t[1],.1,100),s=a(i.und(t[2])?10:t[2],.1,100),f=a(i.und(t[3])?0:t[3],.1,100),l=Math.sqrt(u/o),d=s/(2*Math.sqrt(u*o)),p=d<1?l*Math.sqrt(1-d*d):0,v=1,h=d<1?(d*l-f)/p:-f+l;function g(n){var t=e?e*n/1e3:n;return t=d<1?Math.exp(-t*d*l)*(v*Math.cos(p*t)+h*Math.sin(p*t)):(v+h*t)*Math.exp(-t*l),0===n||1===n?n:1-t}return e?g:function(){var e=r.springs[n];if(e)return e;for(var t=0,a=0;;)if(1===g(t+=1/6)){if(++a>=16)break}else a=0;var o=t*(1/6)*1e3;return r.springs[n]=o,o}}function f(n){return void 0===n&&(n=10),function(e){return Math.ceil(a(e,1e-6,1)*n)*(1/n)}}var l,d,p=function(){var n=11,e=1/(n-1);function t(n,e){return 1-3*e+3*n}function r(n,e){return 3*e-6*n}function a(n){return 3*n}function o(n,e,o){return((t(e,o)*n+r(e,o))*n+a(e))*n}function u(n,e,o){return 3*t(e,o)*n*n+2*r(e,o)*n+a(e)}return function(t,r,a,i){if(0<=t&&t<=1&&0<=a&&a<=1){var c=new Float32Array(n);if(t!==r||a!==i)for(var s=0;s<n;++s)c[s]=o(s*e,t,a);return function(n){return t===r&&a===i?n:0===n||1===n?n:o(f(n),r,i)}}function f(r){for(var i=0,s=1,f=n-1;s!==f&&c[s]<=r;++s)i+=e;var l=i+(r-c[--s])/(c[s+1]-c[s])*e,d=u(l,t,a);return d>=.001?function(n,e,t,r){for(var a=0;a<4;++a){var i=u(e,t,r);if(0===i)return e;e-=(o(e,t,r)-n)/i}return e}(r,l,t,a):0===d?l:function(n,e,t,r,a){for(var u,i,c=0;(u=o(i=e+(t-e)/2,r,a)-n)>0?t=i:e=i,Math.abs(u)>1e-7&&++c<10;);return i}(r,i,i+e,t,a)}}}(),v=(l={linear:function(){return function(n){return n}}},d={Sine:function(){return function(n){return 1-Math.cos(n*Math.PI/2)}},Circ:function(){return function(n){return 1-Math.sqrt(1-n*n)}},Back:function(){return function(n){return n*n*(3*n-2)}},Bounce:function(){return function(n){for(var e,t=4;n<((e=Math.pow(2,--t))-1)/11;);return 1/Math.pow(4,3-t)-7.5625*Math.pow((3*e-2)/22-n,2)}},Elastic:function(n,e){void 0===n&&(n=1),void 0===e&&(e=.5);var t=a(n,1,10),r=a(e,.1,2);return function(n){return 0===n||1===n?n:-t*Math.pow(2,10*(n-1))*Math.sin((n-1-r/(2*Math.PI)*Math.asin(1/t))*(2*Math.PI)/r)}}},["Quad","Cubic","Quart","Quint","Expo"].forEach(function(n,e){d[n]=function(){return function(n){return Math.pow(n,e+2)}}}),Object.keys(d).forEach(function(n){var e=d[n];l["easeIn"+n]=e,l["easeOut"+n]=function(n,t){return function(r){return 1-e(n,t)(1-r)}},l["easeInOut"+n]=function(n,t){return function(r){return r<.5?e(n,t)(2*r)/2:1-e(n,t)(-2*r+2)/2}},l["easeOutIn"+n]=function(n,t){return function(r){return r<.5?(1-e(n,t)(1-2*r))/2:(e(n,t)(2*r-1)+1)/2}}}),l);function h(n,e){if(i.fnc(n))return n;var t=n.split("(")[0],r=v[t],a=c(n);switch(t){case"spring":return s(n,e);case"cubicBezier":return u(p,a);case"steps":return u(f,a);default:return u(r,a)}}function g(n){try{return document.querySelectorAll(n)}catch(n){return}}function m(n,e){for(var t=n.length,r=arguments.length>=2?arguments[1]:void 0,a=[],o=0;o<t;o++)if(o in n){var u=n[o];e.call(r,u,o,n)&&a.push(u)}return a}function y(n){return n.reduce(function(n,e){return n.concat(i.arr(e)?y(e):e)},[])}function b(n){return i.arr(n)?n:(i.str(n)&&(n=g(n)||n),n instanceof NodeList||n instanceof HTMLCollection?[].slice.call(n):[n])}function M(n,e){return n.some(function(n){return n===e})}function x(n){var e={};for(var t in n)e[t]=n[t];return e}function w(n,e){var t=x(n);for(var r in n)t[r]=e.hasOwnProperty(r)?e[r]:n[r];return t}function k(n,e){var t=x(n);for(var r in e)t[r]=i.und(n[r])?e[r]:n[r];return t}function O(n){return i.rgb(n)?(t=/rgb\((\d+,\s*[\d]+,\s*[\d]+)\)/g.exec(e=n))?"rgba("+t[1]+",1)":e:i.hex(n)?(r=n.replace(/^#?([a-f\d])([a-f\d])([a-f\d])$/i,function(n,e,t,r){return e+e+t+t+r+r}),a=/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(r),"rgba("+parseInt(a[1],16)+","+parseInt(a[2],16)+","+parseInt(a[3],16)+",1)"):i.hsl(n)?function(n){var e,t,r,a=/hsl\((\d+),\s*([\d.]+)%,\s*([\d.]+)%\)/g.exec(n)||/hsla\((\d+),\s*([\d.]+)%,\s*([\d.]+)%,\s*([\d.]+)\)/g.exec(n),o=parseInt(a[1],10)/360,u=parseInt(a[2],10)/100,i=parseInt(a[3],10)/100,c=a[4]||1;function s(n,e,t){return t<0&&(t+=1),t>1&&(t-=1),t<1/6?n+6*(e-n)*t:t<.5?e:t<2/3?n+(e-n)*(2/3-t)*6:n}if(0==u)e=t=r=i;else{var f=i<.5?i*(1+u):i+u-i*u,l=2*i-f;e=s(l,f,o+1/3),t=s(l,f,o),r=s(l,f,o-1/3)}return"rgba("+255*e+","+255*t+","+255*r+","+c+")"}(n):void 0;var e,t,r,a}function C(n){var e=/[+-]?\d*\.?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?(%|px|pt|em|rem|in|cm|mm|ex|ch|pc|vw|vh|vmin|vmax|deg|rad|turn)?$/.exec(n);if(e)return e[1]}function P(n,e){return i.fnc(n)?n(e.target,e.id,e.total):n}function I(n,e){return n.getAttribute(e)}function D(n,e,t){if(M([t,"deg","rad","turn"],C(e)))return e;var a=r.CSS[e+t];if(!i.und(a))return a;var o=document.createElement(n.tagName),u=n.parentNode&&n.parentNode!==document?n.parentNode:document.body;u.appendChild(o),o.style.position="absolute",o.style.width=100+t;var c=100/o.offsetWidth;u.removeChild(o);var s=c*parseFloat(e);return r.CSS[e+t]=s,s}function B(n,e,t){if(e in n.style){var r=e.replace(/([a-z])([A-Z])/g,"$1-$2").toLowerCase(),a=n.style[e]||getComputedStyle(n).getPropertyValue(r)||"0";return t?D(n,a,t):a}}function T(n,e){return i.dom(n)&&!i.inp(n)&&(!i.nil(I(n,e))||i.svg(n)&&n[e])?"attribute":i.dom(n)&&M(t,e)?"transform":i.dom(n)&&"transform"!==e&&B(n,e)?"css":null!=n[e]?"object":void 0}function E(n){if(i.dom(n)){for(var e,t=n.style.transform||"",r=/(\w+)\(([^)]*)\)/g,a=new Map;e=r.exec(t);)a.set(e[1],e[2]);return a}}function F(n,e,t,r){var a,u=o(e,"scale")?1:0+(o(a=e,"translate")||"perspective"===a?"px":o(a,"rotate")||o(a,"skew")?"deg":void 0),i=E(n).get(e)||u;return t&&(t.transforms.list.set(e,i),t.transforms.last=e),r?D(n,i,r):i}function A(n,e,t,r){switch(T(n,e)){case"transform":return F(n,e,r,t);case"css":return B(n,e,t);case"attribute":return I(n,e);default:return n[e]||0}}function N(n,e){var t=/^(\*=|\+=|-=)/.exec(n);if(!t)return n;var r=C(n)||0,a=parseFloat(e),o=parseFloat(n.replace(t[0],""));switch(t[0][0]){case"+":return a+o+r;case"-":return a-o+r;case"*":return a*o+r}}function S(n,e){if(i.col(n))return O(n);if(/\s/g.test(n))return n;var t=C(n),r=t?n.substr(0,n.length-t.length):n;return e?r+e:r}function L(n,e){return Math.sqrt(Math.pow(e.x-n.x,2)+Math.pow(e.y-n.y,2))}function j(n){for(var e,t=n.points,r=0,a=0;a<t.numberOfItems;a++){var o=t.getItem(a);a>0&&(r+=L(e,o)),e=o}return r}function q(n){if(n.getTotalLength)return n.getTotalLength();switch(n.tagName.toLowerCase()){case"circle":return o=n,2*Math.PI*I(o,"r");case"rect":return 2*I(a=n,"width")+2*I(a,"height");case"line":return L({x:I(r=n,"x1"),y:I(r,"y1")},{x:I(r,"x2"),y:I(r,"y2")});case"polyline":return j(n);case"polygon":return t=(e=n).points,j(e)+L(t.getItem(t.numberOfItems-1),t.getItem(0))}var e,t,r,a,o}function H(n,e){var t=e||{},r=t.el||function(n){for(var e=n.parentNode;i.svg(e)&&i.svg(e.parentNode);)e=e.parentNode;return e}(n),a=r.getBoundingClientRect(),o=I(r,"viewBox"),u=a.width,c=a.height,s=t.viewBox||(o?o.split(" "):[0,0,u,c]);return{el:r,viewBox:s,x:s[0]/1,y:s[1]/1,w:u,h:c,vW:s[2],vH:s[3]}}function V(n,e,t){function r(t){void 0===t&&(t=0);var r=e+t>=1?e+t:0;return n.el.getPointAtLength(r)}var a=H(n.el,n.svg),o=r(),u=r(-1),i=r(1),c=t?1:a.w/a.vW,s=t?1:a.h/a.vH;switch(n.property){case"x":return(o.x-a.x)*c;case"y":return(o.y-a.y)*s;case"angle":return 180*Math.atan2(i.y-u.y,i.x-u.x)/Math.PI}}function $(n,e){var t=/[+-]?\d*\.?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?/g,r=S(i.pth(n)?n.totalLength:n,e)+"";return{original:r,numbers:r.match(t)?r.match(t).map(Number):[0],strings:i.str(n)||e?r.split(t):[]}}function W(n){return m(n?y(i.arr(n)?n.map(b):b(n)):[],function(n,e,t){return t.indexOf(n)===e})}function X(n){var e=W(n);return e.map(function(n,t){return{target:n,id:t,total:e.length,transforms:{list:E(n)}}})}function Y(n,e){var t=x(e);if(/^spring/.test(t.easing)&&(t.duration=s(t.easing)),i.arr(n)){var r=n.length;2===r&&!i.obj(n[0])?n={value:n}:i.fnc(e.duration)||(t.duration=e.duration/r)}var a=i.arr(n)?n:[n];return a.map(function(n,t){var r=i.obj(n)&&!i.pth(n)?n:{value:n};return i.und(r.delay)&&(r.delay=t?0:e.delay),i.und(r.endDelay)&&(r.endDelay=t===a.length-1?e.endDelay:0),r}).map(function(n){return k(n,t)})}function Z(n,e){var t=[],r=e.keyframes;for(var a in r&&(e=k(function(n){for(var e=m(y(n.map(function(n){return Object.keys(n)})),function(n){return i.key(n)}).reduce(function(n,e){return n.indexOf(e)<0&&n.push(e),n},[]),t={},r=function(r){var a=e[r];t[a]=n.map(function(n){var e={};for(var t in n)i.key(t)?t==a&&(e.value=n[t]):e[t]=n[t];return e})},a=0;a<e.length;a++)r(a);return t}(r),e)),e)i.key(a)&&t.push({name:a,tweens:Y(e[a],n)});return t}function G(n,e){var t;return n.tweens.map(function(r){var a=function(n,e){var t={};for(var r in n){var a=P(n[r],e);i.arr(a)&&1===(a=a.map(function(n){return P(n,e)})).length&&(a=a[0]),t[r]=a}return t.duration=parseFloat(t.duration),t.delay=parseFloat(t.delay),t}(r,e),o=a.value,u=i.arr(o)?o[1]:o,c=C(u),s=A(e.target,n.name,c,e),f=t?t.to.original:s,l=i.arr(o)?o[0]:f,d=C(l)||C(s),p=c||d;return i.und(u)&&(u=f),a.from=$(l,p),a.to=$(N(u,l),p),a.start=t?t.end:0,a.end=a.start+a.delay+a.duration+a.endDelay,a.easing=h(a.easing,a.duration),a.isPath=i.pth(o),a.isPathTargetInsideSVG=a.isPath&&i.svg(e.target),a.isColor=i.col(a.from.original),a.isColor&&(a.round=1),t=a,a})}var Q={css:function(n,e,t){return n.style[e]=t},attribute:function(n,e,t){return n.setAttribute(e,t)},object:function(n,e,t){return n[e]=t},transform:function(n,e,t,r,a){if(r.list.set(e,t),e===r.last||a){var o="";r.list.forEach(function(n,e){o+=e+"("+n+") "}),n.style.transform=o}}};function z(n,e){X(n).forEach(function(n){for(var t in e){var r=P(e[t],n),a=n.target,o=C(r),u=A(a,t,o,n),i=N(S(r,o||C(u)),u),c=T(a,t);Q[c](a,t,i,n.transforms,!0)}})}function _(n,e){return m(y(n.map(function(n){return e.map(function(e){return function(n,e){var t=T(n.target,e.name);if(t){var r=G(e,n),a=r[r.length-1];return{type:t,property:e.name,animatable:n,tweens:r,duration:a.end,delay:r[0].delay,endDelay:a.endDelay}}}(n,e)})})),function(n){return!i.und(n)})}function R(n,e){var t=n.length,r=function(n){return n.timelineOffset?n.timelineOffset:0},a={};return a.duration=t?Math.max.apply(Math,n.map(function(n){return r(n)+n.duration})):e.duration,a.delay=t?Math.min.apply(Math,n.map(function(n){return r(n)+n.delay})):e.delay,a.endDelay=t?a.duration-Math.max.apply(Math,n.map(function(n){return r(n)+n.duration-n.endDelay})):e.endDelay,a}var J=0;var K=[],U=function(){var n;function e(t){for(var r=K.length,a=0;a<r;){var o=K[a];o.paused?(K.splice(a,1),r--):(o.tick(t),a++)}n=a>0?requestAnimationFrame(e):void 0}return"undefined"!=typeof document&&document.addEventListener("visibilitychange",function(){en.suspendWhenDocumentHidden&&(nn()?n=cancelAnimationFrame(n):(K.forEach(function(n){return n._onDocumentVisibility()}),U()))}),function(){n||nn()&&en.suspendWhenDocumentHidden||!(K.length>0)||(n=requestAnimationFrame(e))}}();function nn(){return!!document&&document.hidden}function en(t){void 0===t&&(t={});var r,o=0,u=0,i=0,c=0,s=null;function f(n){var e=window.Promise&&new Promise(function(n){return s=n});return n.finished=e,e}var l,d,p,v,h,g,y,b,M=(d=w(n,l=t),p=w(e,l),v=Z(p,l),h=X(l.targets),g=_(h,v),y=R(g,p),b=J,J++,k(d,{id:b,children:[],animatables:h,animations:g,duration:y.duration,delay:y.delay,endDelay:y.endDelay}));f(M);function x(){var n=M.direction;"alternate"!==n&&(M.direction="normal"!==n?"normal":"reverse"),M.reversed=!M.reversed,r.forEach(function(n){return n.reversed=M.reversed})}function O(n){return M.reversed?M.duration-n:n}function C(){o=0,u=O(M.currentTime)*(1/en.speed)}function P(n,e){e&&e.seek(n-e.timelineOffset)}function I(n){for(var e=0,t=M.animations,r=t.length;e<r;){var o=t[e],u=o.animatable,i=o.tweens,c=i.length-1,s=i[c];c&&(s=m(i,function(e){return n<e.end})[0]||s);for(var f=a(n-s.start-s.delay,0,s.duration)/s.duration,l=isNaN(f)?1:s.easing(f),d=s.to.strings,p=s.round,v=[],h=s.to.numbers.length,g=void 0,y=0;y<h;y++){var b=void 0,x=s.to.numbers[y],w=s.from.numbers[y]||0;b=s.isPath?V(s.value,l*x,s.isPathTargetInsideSVG):w+l*(x-w),p&&(s.isColor&&y>2||(b=Math.round(b*p)/p)),v.push(b)}var k=d.length;if(k){g=d[0];for(var O=0;O<k;O++){d[O];var C=d[O+1],P=v[O];isNaN(P)||(g+=C?P+C:P+" ")}}else g=v[0];Q[o.type](u.target,o.property,g,u.transforms),o.currentValue=g,e++}}function D(n){M[n]&&!M.passThrough&&M[n](M)}function B(n){var e=M.duration,t=M.delay,l=e-M.endDelay,d=O(n);M.progress=a(d/e*100,0,100),M.reversePlayback=d<M.currentTime,r&&function(n){if(M.reversePlayback)for(var e=c;e--;)P(n,r[e]);else for(var t=0;t<c;t++)P(n,r[t])}(d),!M.began&&M.currentTime>0&&(M.began=!0,D("begin")),!M.loopBegan&&M.currentTime>0&&(M.loopBegan=!0,D("loopBegin")),d<=t&&0!==M.currentTime&&I(0),(d>=l&&M.currentTime!==e||!e)&&I(e),d>t&&d<l?(M.changeBegan||(M.changeBegan=!0,M.changeCompleted=!1,D("changeBegin")),D("change"),I(d)):M.changeBegan&&(M.changeCompleted=!0,M.changeBegan=!1,D("changeComplete")),M.currentTime=a(d,0,e),M.began&&D("update"),n>=e&&(u=0,M.remaining&&!0!==M.remaining&&M.remaining--,M.remaining?(o=i,D("loopComplete"),M.loopBegan=!1,"alternate"===M.direction&&x()):(M.paused=!0,M.completed||(M.completed=!0,D("loopComplete"),D("complete"),!M.passThrough&&"Promise"in window&&(s(),f(M)))))}return M.reset=function(){var n=M.direction;M.passThrough=!1,M.currentTime=0,M.progress=0,M.paused=!0,M.began=!1,M.loopBegan=!1,M.changeBegan=!1,M.completed=!1,M.changeCompleted=!1,M.reversePlayback=!1,M.reversed="reverse"===n,M.remaining=M.loop,r=M.children;for(var e=c=r.length;e--;)M.children[e].reset();(M.reversed&&!0!==M.loop||"alternate"===n&&1===M.loop)&&M.remaining++,I(M.reversed?M.duration:0)},M._onDocumentVisibility=C,M.set=function(n,e){return z(n,e),M},M.tick=function(n){i=n,o||(o=i),B((i+(u-o))*en.speed)},M.seek=function(n){B(O(n))},M.pause=function(){M.paused=!0,C()},M.play=function(){M.paused&&(M.completed&&M.reset(),M.paused=!1,K.push(M),C(),U())},M.reverse=function(){x(),M.completed=!M.reversed,C()},M.restart=function(){M.reset(),M.play()},M.remove=function(n){rn(W(n),M)},M.reset(),M.autoplay&&M.play(),M}function tn(n,e){for(var t=e.length;t--;)M(n,e[t].animatable.target)&&e.splice(t,1)}function rn(n,e){var t=e.animations,r=e.children;tn(n,t);for(var a=r.length;a--;){var o=r[a],u=o.animations;tn(n,u),u.length||o.children.length||r.splice(a,1)}t.length||r.length||e.pause()}return en.version="3.2.1",en.speed=1,en.suspendWhenDocumentHidden=!0,en.running=K,en.remove=function(n){for(var e=W(n),t=K.length;t--;)rn(e,K[t])},en.get=A,en.set=z,en.convertPx=D,en.path=function(n,e){var t=i.str(n)?g(n)[0]:n,r=e||100;return function(n){return{property:n,el:t,svg:H(t),totalLength:q(t)*(r/100)}}},en.setDashoffset=function(n){var e=q(n);return n.setAttribute("stroke-dasharray",e),e},en.stagger=function(n,e){void 0===e&&(e={});var t=e.direction||"normal",r=e.easing?h(e.easing):null,a=e.grid,o=e.axis,u=e.from||0,c="first"===u,s="center"===u,f="last"===u,l=i.arr(n),d=l?parseFloat(n[0]):parseFloat(n),p=l?parseFloat(n[1]):0,v=C(l?n[1]:n)||0,g=e.start||0+(l?d:0),m=[],y=0;return function(n,e,i){if(c&&(u=0),s&&(u=(i-1)/2),f&&(u=i-1),!m.length){for(var h=0;h<i;h++){if(a){var b=s?(a[0]-1)/2:u%a[0],M=s?(a[1]-1)/2:Math.floor(u/a[0]),x=b-h%a[0],w=M-Math.floor(h/a[0]),k=Math.sqrt(x*x+w*w);"x"===o&&(k=-x),"y"===o&&(k=-w),m.push(k)}else m.push(Math.abs(u-h));y=Math.max.apply(Math,m)}r&&(m=m.map(function(n){return r(n/y)*y})),"reverse"===t&&(m=m.map(function(n){return o?n<0?-1*n:-n:Math.abs(y-n)}))}return g+(l?(p-d)/y:d)*(Math.round(100*m[e])/100)+v}},en.timeline=function(n){void 0===n&&(n={});var t=en(n);return t.duration=0,t.add=function(r,a){var o=K.indexOf(t),u=t.children;function c(n){n.passThrough=!0}o>-1&&K.splice(o,1);for(var s=0;s<u.length;s++)c(u[s]);var f=k(r,w(e,n));f.targets=f.targets||n.targets;var l=t.duration;f.autoplay=!1,f.direction=t.direction,f.timelineOffset=i.und(a)?l:N(a,l),c(t),t.seek(f.timelineOffset);var d=en(f);c(d),u.push(d);var p=R(u,n);return t.delay=p.delay,t.endDelay=p.endDelay,t.duration=p.duration,t.seek(0),t.reset(),t.autoplay&&t.play(),t},t},en.easing=h,en.penner=v,en.random=function(n,e){return Math.floor(Math.random()*(e-n+1))+n},en});
