@@ -182,9 +182,9 @@ var name_data=[
   },
 
   {
-   tag: "Tangikulan",
-   mean:"以祖先特徵為名，該氏族長有尾巴（ikul），故稱之。"
-  },
+   tag: "Takistaulan",
+   mean:"taulan為「傻瓜」的意思，由於該名字有貶抑的意思，後被稱之為ispalidav。"
+},
 
   {
    tag: "Taisnunan",
